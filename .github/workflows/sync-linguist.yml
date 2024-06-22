@@ -61,6 +61,7 @@ jobs:
           exit 1
         fi
 
+        echo $commit
         echo "::set-output name=commit::$commit"
         echo "::set-output name=short_commit::${commit::8}"
 
